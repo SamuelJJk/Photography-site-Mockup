@@ -3,7 +3,7 @@ import React from 'react'
 function Nav() {
   return (
     <div className='Navbar'>
-      <div className="legoContainer"><img className='lego' src="" alt="lego" /></div>
+      <div className="legoContainer">Daniel Kim</div>
       <div className="navItems">
         <div className="navItem">Gallery</div>
         <div className="navItem">About</div>
