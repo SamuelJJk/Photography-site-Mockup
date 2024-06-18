@@ -8,7 +8,6 @@ import Footer from '../Components/Footer'
 function Main() {
   return (
     <div className='index'>
-      <Nav/>
       <Hero/>
       <Summary/>
       <Footer/>
