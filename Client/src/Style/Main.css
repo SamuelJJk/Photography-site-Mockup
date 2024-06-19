@@ -1,5 +1,5 @@
 .index{
-    color: white;
+    color: black;
 }
 /* Navbar */
 .Navbar{
@@ -26,6 +26,7 @@
     height: 800px;
     position: relative;
     align-items: center;
+    color: white;
 }
 .splash{
     height: 100%;
@@ -95,4 +96,46 @@
     height: 100%;
     width: 200px;
     object-fit: cover;
+}
+/* Featured work */
+.featuredCm{
+    border: solid black;
+    height: 500px;
+    text-align: left;
+    padding: 0 50px;
+}
+.featuredPhotos{
+    /* border: solid orange; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+}
+/* Phote block */
+.photoBlock{
+    border:1px solid black;
+    height: 270px;
+    width: 270px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.photoBlockImg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.featuredCmBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+.viewGallary{
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+    margin: 10px;
+    height: 50px;
+    width: 140px;
 }
