@@ -139,3 +139,49 @@
     height: 50px;
     width: 140px;
 }
+/* photo Display */
+.photoDisplay{
+    border: solid purple;
+    height: 600px;
+    width: 1000px;
+    max-width: 80%;
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.photo{
+    border: solid fuchsia;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+}
+.inlargerImg{
+    border: solid blue;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.imgDescription{
+    border: solid lime;
+    width: 30%;
+    background-color: white;
+}
+.photoHeader{
+    border-bottom: solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:3px;
+}
+.photoBody{
+    border: solid burlywood;
+    height: 400px;
+    display: flex;
+    text-align: left;
+    padding: 1em;
+}
