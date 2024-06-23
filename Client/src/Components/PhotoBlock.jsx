@@ -10,7 +10,7 @@ function PhotoBlock({toggleModal}) {
     },[]);
   return (
     <div className='photoBlock'>
-      <img src={displayPhoto.image} alt="" className="photoBlockImg" onClick={()=>{toggleModal()}}/>
+      <img src={displayPhoto.image} alt="" className="photoBlockImg" onClick={()=>{toggleModal(displayPhoto.image)}}/>
     </div>
   )
 }
