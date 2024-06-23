@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-function PhotoBlock() {
+function PhotoBlock({toggleModal}) {
     const [displayPhoto,setDisplayPhoto]=useState({});
 
     useEffect(()=>{
@@ -10,7 +10,7 @@ function PhotoBlock() {
     },[]);
   return (
     <div className='photoBlock'>
-      <img src={displayPhoto.image} alt="" className="photoBlockImg" />
+      <img src={displayPhoto.image} alt="" className="photoBlockImg" onClick={()=>{toggleModal()}}/>
     </div>
   )
 }

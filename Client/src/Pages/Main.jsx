@@ -8,25 +8,29 @@ import PhotoDisplay from '../Components/PhotoDisplay'
 
 function Main() {
   const [displayModal,setDisplayModal]=useState({
-    toggle:false,
+    toggle:true,
     style:{
-      display:"flex"
+      visibility:"visible"
     }
+    //This state determines if the modal is appears or not
   });
   const toggleModal =()=>{
-    setDisplayModal({toggle:prevState =>!prevState})
-    if(displayModal.toggle){
-      setDisplayModal({style:{display:"flex"}})
-    }else{
-      setDisplayModal({style:{display:"none"}})
-    }
+    setDisplayModal((prevState)=>{
+      const newToggle = !prevState.toggle
+      return{
+        ...prevState,
+        toggle: newToggle,
+        style:{visibility:newToggle?"visible":"hidden"}
+      }
+    })
   }
+  //this func is to toggle the state of true or false for the modal
   return (
     <div className='index'>
       <PhotoDisplay toggleModal={toggleModal} displayModal={displayModal}/>
       <Hero/>
       <Summary/>
-      <FeaturedWork/>
+      <FeaturedWork toggleModal={toggleModal}/>
       <Footer/>
     </div>
   )
