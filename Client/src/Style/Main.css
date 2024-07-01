@@ -187,3 +187,17 @@
     text-align: left;
     padding: 1em;
 }
+/* Reviews */
+.reviewBoard{
+    border: solid orange;
+    height: 400px;
+    display: flex;
+}
+.ratingCard{
+    border: solid pink;
+    display: flex;
+    justify-content: left;
+    width: 400px;
+    text-align: left;
+}
+

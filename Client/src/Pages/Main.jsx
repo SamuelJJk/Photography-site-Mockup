@@ -5,6 +5,7 @@ import Summary from '../Components/Summary'
 import Footer from '../Components/Footer'
 import FeaturedWork from '../Components/FeaturedWork'
 import PhotoDisplay from '../Components/PhotoDisplay'
+import ReviewBoard from '../Components/ReviewBoard'
 
 function Main() {
   const [displayModal,setDisplayModal]=useState({
@@ -33,6 +34,7 @@ function Main() {
       <Hero/>
       <Summary/>
       <FeaturedWork toggleModal={toggleModal} />
+      <ReviewBoard/>
       <Footer/>
     </div>
   )
